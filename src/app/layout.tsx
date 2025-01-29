@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Head from "next/head";
+import Navbar from "./components/navbar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,9 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
+      <Head>
+        <meta name="robots" content="index, follow" /> 
+      </Head>
+      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-indigo-950 bg-[url(https://png.pngtree.com/background/20240414/original/pngtree-d-illustration-of-nfts-featuring-non-fungible-tokens-crypto-art-in-picture-image_8495603.jpg)]
+         bg-no-repeat bg-cover bg-blend-color-burn`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
