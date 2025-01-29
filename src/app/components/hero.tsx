@@ -9,7 +9,7 @@ export default function Herosection(){
             <div className="text-lg text-gray-500 mb-2 uppercase">Non fungible tokens</div>
             <div className="text-[130px] h-64 text-wrap font-bold font-sans leading-8">
                 A new NFT 
-                <Image src={Images.logo} alt="logo" width={200}  className="inline bg-transparent"/>
+                <Image src={Images.logo} alt="logo" width={200}  className="inline bg-transparent mix-blend-lighten"/>
                 Experience
             </div>
             <div className="text-xl text-gray-500 mt-2 ">Discover, collect and sell</div>
