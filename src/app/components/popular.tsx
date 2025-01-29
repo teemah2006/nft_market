@@ -19,6 +19,7 @@ export default function Popular_auctions(){
                     
                 }
             </div>
+            <button className=" lg:text-[17px] text-[16px] text-gray-400 border-2 border-gray-500  rounded-xl p-4 font-bold ">Show me more</button>
 
         </div>
     )

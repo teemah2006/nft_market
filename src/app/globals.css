@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.gradient1{
+  background: linear-gradient(to bottom, #1e1e29, #0e1018);
+}
+.gradient2{
+  background: linear-gradient(to top, #1e1e29, #1e1e29);
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 30px rgba(0, 255, 255, 0.3);
+}

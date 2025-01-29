@@ -5,8 +5,8 @@ import { Images } from "@/app/images/image";
 export default function SellCreate(){
     return(
         
-        <div className="rounded-2xl h-min lg:h-auto w-1/3 bg-gray-900 p-4 my-8 box-border">
-            <div className="relative rounded-xl -top-[2.5rem] pl-4 text-gray-500 bg-gray-900 w-1/3 h-[50px] -left-[1rem] skew-x-10 font-extrabold text-left tracking-wider">
+        <div className="rounded-2xl h-min lg:h-auto w-1/3 s p-4 my-8 box-border gradient1">
+            <div className="relative rounded-xl gradient2 -top-[2.5rem] pl-4 text-gray-500  w-1/3 h-[50px] -left-[1rem] skew-x-10 font-extrabold text-left tracking-wider">
                 . . . 
             </div>
             

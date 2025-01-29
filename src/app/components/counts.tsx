@@ -1,0 +1,47 @@
+'use client';
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { GiPalette } from "react-icons/gi";
+import { TfiGallery } from "react-icons/tfi";
+import { IoWalletOutline } from "react-icons/io5";
+
+const activeUsers = "300k";
+const artworks = '52,5k';
+const artists = "17,5k";
+const ethSpent = '35.58';
+
+const Compiled_data = [
+    {
+        name: "Users active",
+        count: activeUsers,
+        icon: <IoPersonCircleSharp className="text-[50px] mx-auto my-8"/>
+    },
+    {
+        name: "Artworks",
+        count: artworks,
+        icon: <TfiGallery className="text-[50px] mx-auto my-8"/>
+    },
+    {
+        name: "Artists",
+        count: artists,
+        icon: <GiPalette className="text-[50px] mx-auto my-8"/>
+    },
+    {
+        name: "ETH spent",
+        count: ethSpent,
+        icon:<IoWalletOutline className="text-[50px] mx-auto my-8"/>
+    }
+]
+
+export function Data(){
+    return(
+        <div className="grid grid-cols-4 text-center justify-between w-full h-max items-center my-36">
+            {Compiled_data.map((item, index) => (
+                <div key={index} className="text-center">
+                    {item.icon}
+                    <h1 className="text-[30px] text-white font-bold leading-4">{item.count}</h1>
+                    <p className="text-gray-500 text-lg lg:text-[15px] my-4 leading-4">{item.name}</p>
+                </div>
+            ))}
+        </div>
+    )
+}
