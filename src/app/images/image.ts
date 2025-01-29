@@ -7,6 +7,7 @@ import art2 from './fidnza.png';
 import art3 from './images1.jpg';
 import avatar from './istockphoto-1386479313-612x612.jpg'
 import paint from './5024995.webp';
+import emoji from './idea-emoji.png'
 export const Images = {
     logo,
     addidas,
@@ -17,4 +18,5 @@ export const Images = {
     art3,
     avatar,
     paint,
+    emoji
 }
