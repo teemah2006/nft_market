@@ -15,7 +15,7 @@ export default function Herosection(){
             <div className="text-xl text-gray-500 mt-2 ">Discover, collect and sell</div>
 
             <div className="bg-white w-[600px] h-[70px] rounded-xl my-10 mx-auto py-6 px-4 text-justify">
-                <input type="text" placeholder="Items, collections and creators" className="w-[50%] outline-none bg-white tracking-wider"/>
+                <input type="text" placeholder="Items, collections and creators" className="w-[50%] outline-none bg-white text-black tracking-wider"/>
                 <span className="border-l-2 float-right  px-2 text-indigo-900">
                     Category <BiSolidDownArrow className="inline mx-8 text-gray-400"/> <BiSearch className="inline mx-4 text-indigo-700 text-2xl"/>
 

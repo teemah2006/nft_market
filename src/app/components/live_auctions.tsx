@@ -8,68 +8,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { BsClock } from 'react-icons/bs';
 import React from "react";
 import { BsHeartFill,BsHeart } from 'react-icons/bs';
-const Auction_details = [
-    {
-        id: 1,
-        src: Images.art1,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art1",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    },
-    {
-        id: 2,
-        src: Images.art2,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art2",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    },
-    {
-        id: 3,
-        src: Images.art3,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art3",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    },
-    {
-        id: 4,
-        src: Images.art4,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art4",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    },
-    {
-        id: 5,
-        src: Images.art2,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art2",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    },
-    {
-        id: 6,
-        src: Images.art1,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        alt: "art1",
-        price: "101ETH",
-        bidding: "101 people are bidding",
-        time: "22:59 mins left",
-        likes: 54
-    }
-]
+import { Auction_details } from './auction';
 
 interface Nftcardprops{
     src: string | StaticImport;
@@ -79,15 +18,16 @@ interface Nftcardprops{
     bidding: string;
     time: string;
     likes: number;
-    liked: true|false
+    liked: true|false;
+    avatar: true|false
 }
 
-export const Nftcard: React.FC<Nftcardprops>= ({src,desc,alt,price,bidding,time,likes,liked}) => {
+export const Nftcard: React.FC<Nftcardprops>= ({src,desc,alt,price,bidding,time,likes,liked,avatar}) => {
     return(
-        <div className='rounded-2xl h-max w-[370px] bg-black bg-opacity-75 p-4 my-8 '>
-            <Image src={src} className='rounded-xl w-full h-[450px]' alt={alt}></Image>
-            <div className='text-[16px]  flex flex-row justify-between gap-6 items-center my-4'>
-                <h1 className='text-white font-bold  text-left'>{desc}</h1>
+        <div className='rounded-2xl h-min lg:h-max w-auto bg-black bg-opacity-50 p-4 my-8 mx-4 overflow-hidden'>
+            <Image src={src} className='rounded-xl w-full h-[400px]' alt={alt} height={900} width={900} />
+            <div className='text-[16px]  flex flex-row flex-wrap justify-between gap-6 items-center my-4'>
+                <h1 className='text-white font-bold text-[1rem]  text-left w-[70%]'>{desc}</h1>
                 <div className='bg-indigo-950 text-purple-600 p-2 font-bold rounded-lg'>{price}</div>
             </div>
             
@@ -96,6 +36,7 @@ export const Nftcard: React.FC<Nftcardprops>= ({src,desc,alt,price,bidding,time,
             </div>
             <hr className=' mb-4'/>
             <div className='text-left text-[16px] flex flex-row items-center gap-2 text-gray-500'>
+                {avatar? 
                 <div className='flex -space-x-4'>
                 <Image src={Images.avatar}
                     alt='user avatar' width={48} height={48} className='w-8 h-8 rounded-full border-2 border-black'
@@ -109,7 +50,9 @@ export const Nftcard: React.FC<Nftcardprops>= ({src,desc,alt,price,bidding,time,
               <Image src={Images.avatar}
                     alt='user avatar' width={48} height={48}  className='w-8 h-8 rounded-full border-2 border-black'
               />
-              </div>
+              </div> : null
+                }
+                
                 {bidding}
                 {liked? 
                 <span className='ml-6'><BsHeartFill className='inline text-red-500'/> {likes}</span> : <span className='ml-6'><BsHeart className='inline'/> {likes}</span>
@@ -121,8 +64,8 @@ export const Nftcard: React.FC<Nftcardprops>= ({src,desc,alt,price,bidding,time,
 };
 
 const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3
@@ -138,7 +81,7 @@ export default function Auctions(){
               <Slider {...settings}>
                 {Auction_details.map((item) => (
                 <Nftcard key={item.id} src={item.src} alt={item.alt} desc={item.description} price={item.price} 
-                time={item.time} bidding={item.bidding} likes={item.likes} liked={item.id%2 === 0? true: false}/>
+                time={item.time} bidding={item.bidding} likes={item.likes} liked={item.id%2 === 0? true: false} avatar/>
             ))
                     
                 }
