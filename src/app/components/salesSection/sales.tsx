@@ -20,7 +20,7 @@ export default function Sales(){
             <div className="slider-container">
               <Slider {...settings}>
                 {Offer_details.map((item) => (
-                <Nftcard key={item.id} src={item.src} alt={item.alt} desc={item.description} price={item.price} 
+                <Nftcard key={item.id} src={item.src} alt={item.alt} author={item.author} desc={item.description} price={item.price} 
                 time={item.time} bidding={item.bidding} likes={item.likes} liked={item.id%2 === 0? true: false} avatar={false}/>
             ))
                     

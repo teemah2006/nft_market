@@ -8,7 +8,8 @@ export const Popularauction_details = [
         price: "101ETH",
         bidding: "101 people are bidding",
         time: "22:59 mins left",
-        likes: 54
+        likes: 54,
+        author: "lorem"
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ export const Popularauction_details = [
         price: "101ETH",
         bidding: "101 people are bidding",
         time: "22:59 mins left",
-        likes: 54
+        likes: 54,
+        author: "minni"
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ export const Popularauction_details = [
         price: "101ETH",
         bidding: "101 people are bidding",
         time: "22:59 mins left",
-        likes: 54
+        likes: 54,
+        author: "lorem"
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ export const Popularauction_details = [
         price: "101ETH",
         bidding: "101 people are bidding",
         time: "22:59 mins left",
-        likes: 54
+        likes: 54,
+        author: "minni"
     },
     
     
