@@ -25,7 +25,7 @@ interface Nftcardprops {
   id: number;
   title: string
 }
-const router = useRouter();
+
 // nft card component
 export const Nftcard: React.FC<Nftcardprops> = ({
   src,
@@ -41,6 +41,7 @@ export const Nftcard: React.FC<Nftcardprops> = ({
   id,
   title
 }) => {
+    const router = useRouter();
   return (
     <div className="rounded-2xl h-min lg:h-max w-auto dark:bg-black bg-white shadow-lg bg-opacity-50 p-4 my-8 mx-4 overflow-hidden"
     onClick={() => {
