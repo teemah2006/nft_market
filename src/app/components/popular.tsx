@@ -18,10 +18,10 @@ export default function Popular_auctions(){
             </div>
             <div className="grid grid-cols-4  justify-between">
             {Popularauction_details.map((item) => (
-                <div key={item.id} onClick={() => {   router.push(`/artDetails?id=${item.id}&src=${'/art4.jpeg'}&title=${item.description}&alt=${item.alt}&author=${item.author}
+                <div key={item.id} onClick={() => {   router.push(`/artDetails?id=${item.id}&src=${'/art4.jpeg'}&title=${item.title}&description=${item.description}&alt=${item.alt}&author=${item.author}
                 &price=${item.price}&time=${item.time}&bid=${item.bidding}&liked=${item.id%2 === 0? true: false}`);
                 }}  style={{ cursor: "pointer" }}>
-                    <Nftcard   src={item.src} alt={item.alt} author={item.author} desc={item.description} price={item.price} 
+                    <Nftcard   src={item.src} alt={item.alt} author={item.author} desc={item.title} price={item.price} 
                 time={item.time} bidding={item.bidding} likes={item.likes} liked={item.id%2 === 0? true: false} avatar={false} />
                 </div>
                 

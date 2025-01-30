@@ -10,6 +10,7 @@ import React from "react";
 import { BsHeartFill, BsHeart } from 'react-icons/bs';
 import { Auction_details } from './auction';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface Nftcardprops {
     src: string | StaticImport;
@@ -76,6 +77,7 @@ const settings = {
 };
 
 export default function Auctions() {
+    const router = useRouter();
     return (
         <div className="w-full text-center" id="auctions">
             <h1 className="font-sans font-bold text-white lg:text-[50px] sm:text-[30px] mt-36 ">Latest live auctions</h1>
@@ -84,8 +86,12 @@ export default function Auctions() {
             <div className="slider-container">
                 <Slider {...settings}>
                     {Auction_details.map((item) => (
-                        <Nftcard key={item.id} src={item.src} alt={item.alt} desc={item.description} author={item.author} price={item.price}
+                        <div key={item.id} onClick={() => {   router.push(`/artDetails?id=${item.id}&src=${'/art4.jpeg'}&title=${item.title}&description=${item.description}&alt=${item.alt}&author=${item.author}
+                        &price=${item.price}&time=${item.time}&bid=${item.bidding}&liked=${item.id%2 === 0? true: false}`);
+                        }}  style={{ cursor: "pointer" }}>
+                        <Nftcard key={item.id} src={item.src} alt={item.alt} desc={item.title} author={item.author} price={item.price}
                             time={item.time} bidding={item.bidding} likes={item.likes} liked={item.id % 2 === 0 ? true : false} avatar />
+                        </div>
                     ))
 
                     }

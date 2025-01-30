@@ -3,7 +3,8 @@ export const Auction_details = [
     {
         id: 1,
         src: Images.art1,
-        description: "Lorem ipsum dolor sit amet .", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art1",
         price: "101ETH",
         bidding: "101 people are bidding",
@@ -14,7 +15,8 @@ export const Auction_details = [
     {
         id: 2,
         src: Images.art2,
-        description: "Lorem ipsum dolor sit amet consectetur.", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art2",
         price: "101ETH",
         bidding: "101 people are bidding",
@@ -25,7 +27,8 @@ export const Auction_details = [
     {
         id: 3,
         src: Images.art3,
-        description: "Lorem ipsum dolor sit amet .", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art3",
         price: "101ETH",
         bidding: "101 people are bidding",
@@ -36,7 +39,8 @@ export const Auction_details = [
     {
         id: 4,
         src: '/art4.jpeg',
-        description: "Lorem ipsum dolor sit amet consectetur .", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art4",
         price: "101ETH",
         bidding: "101 people are bidding",
@@ -47,7 +51,8 @@ export const Auction_details = [
     {
         id: 5,
         src: Images.art2,
-        description: "Lorem ipsum dolor sit amet consectetur .", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art2",
         price: "101ETH",
         bidding: "101 people are bidding",
@@ -58,7 +63,8 @@ export const Auction_details = [
     {
         id: 6,
         src: Images.art1,
-        description: "Lorem ipsum dolor sit amet consectetur .", 
+        title: "Lorem ipsum dolor sit amet .", 
+        description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art1",
         price: "101ETH",
         bidding: "101 people are bidding",
