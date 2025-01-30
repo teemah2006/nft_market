@@ -109,6 +109,8 @@ export default function Details() {
               style={{ cursor: "pointer" }}
             >
               <Nftcard
+              id={item.id}
+              title={item.title}
                 key={item.id}
                 src={item.src}
                 alt={item.alt}
