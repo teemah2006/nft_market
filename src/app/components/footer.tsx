@@ -8,7 +8,7 @@ import { socialMediaLinks } from "../utilities/navLinks";
 // this is the page's footer component
 export default function Footer() {
   return (
-    <div className="bg-transparent border shadow-lg  dark:border-gray-500 border-gray-500 rounded-xl w-[90%] justify-self-center h-[400px] grid grid-cols-3 backdrop-blur-xs backdrop-grayscale">
+    <div className="bg-transparent border shadow-lg  dark:border-gray-500 border-gray-500 rounded-xl w-[90%] justify-self-center mx-auto h-[400px] grid grid-cols-3 backdrop-blur-xs backdrop-grayscale">
       <div className="border-r p-4 border-gray-500">
         <Image
           src={Images.logo}

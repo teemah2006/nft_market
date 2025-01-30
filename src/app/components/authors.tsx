@@ -22,7 +22,7 @@ const users = [
 // component for the entire section
 export default function Authors() {
   return (
-    <div className="rounded-2xl dark:border-none border-2 h-min lg:h-max lg:h-auto w-full bg-gray-900 p-4 my-8 box-border dark:gradient1  shadow-lg">
+    <div className="rounded-2xl dark:border-none border-2 h-min lg:h-max lg:h-auto w-full bg-gray-900 p-4 my-8 box-border gradient1  shadow-lg">
       <div className="relative rounded-xl border-t-2 dark:border-none  -top-[2.5rem] pl-4 text-gray-500 gradient2  w-1/3 h-[50px] -left-[1rem] skew-x-10 font-extrabold text-left tracking-wider">
         . . .
       </div>
