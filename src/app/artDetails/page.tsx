@@ -96,17 +96,6 @@ export default function Details() {
           ).map((item) => (
             <div
               key={item.id}
-              onClick={() => {
-                router.push(`/artDetails?id=${
-                  item.id
-                }&src=${"/art4.jpeg"}&title=${item.title}&description=${
-                  item.description
-                }&alt=${item.alt}&author=${item.author}
-                  &price=${item.price}&time=${item.time}&bid=${
-                  item.bidding
-                }&liked=${item.id % 2 === 0 ? true : false}`);
-              }}
-              style={{ cursor: "pointer" }}
             >
               <Nftcard
               id={item.id}
