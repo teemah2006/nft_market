@@ -3,6 +3,8 @@ import { Lowernft_details } from "../lowerpricenft";
 import Image from "next/image";
 import { BsClock, BsHeartFill, BsHeart } from "react-icons/bs";
 import { useRouter } from "next/navigation";
+
+// creating NFT at lower price component
 export default function LowerPricenft() {
   const router = useRouter();
   return (
@@ -10,6 +12,7 @@ export default function LowerPricenft() {
       <h1 className="font-sans font-medium  lg:text-[40px] sm:text-[20px] ">
         Top NFT at a lower price
       </h1>
+      {/* mapping the list of nft items */}
       {Lowernft_details.map((item) => (
         <div
           className="grid grid-cols-3 auto-cols-auto gap-4 my-6"

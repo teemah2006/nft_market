@@ -6,15 +6,15 @@ export const Navlinks = [
     },
     {
         name: "Roadmap",
-        href: "#roadmap"
+        href: "#auctions"
     },
     {
         name: "Discover",
-        href: "#discover"
+        href: "#auctions"
     },
     {
         name: "Community",
-        href: "#community"
+        href: "#auctions"
     }
 ]
 

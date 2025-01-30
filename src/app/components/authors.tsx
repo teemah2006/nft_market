@@ -1,6 +1,8 @@
 "use client";
 import ProfileCard from "./profile_card";
 import { Images } from "../images/image";
+
+// creating a list of example authors
 const users = [
   { avatar: Images.avatar, username: "brook_sim", items: 206, collections: 12 },
   {
@@ -17,6 +19,7 @@ const users = [
   },
 ];
 
+// component for the entire section
 export default function Authors() {
   return (
     <div className="rounded-2xl dark:border-none border-2 h-min lg:h-max lg:h-auto w-full bg-gray-900 p-4 my-8 box-border dark:gradient1  shadow-lg">
@@ -46,6 +49,7 @@ export default function Authors() {
         </div>
         <div className="min-h-screen  bg-transparent text-white flex justify-center items-center p-6 w-1/2">
           <div className="w-full max-w-2xl space-y-4">
+            {/* mapping the authors for display  */}
             {users.map((user, index) => (
               <ProfileCard key={index} {...user} />
             ))}

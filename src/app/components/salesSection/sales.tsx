@@ -1,6 +1,6 @@
 "use client";
 import { Offer_details } from "../offers";
-import { Nftcard } from "../live_auctions";
+import { Nftcard } from "../nftCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +14,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
+// sales component
 export default function Sales() {
   const router = useRouter();
   return (
@@ -26,18 +27,9 @@ export default function Sales() {
           {Offer_details.map((item) => (
             <div
               key={item.id}
-              onClick={() => {
-                router.push(`/artDetails?id=${
-                  item.id
-                }&src=${"/art4.jpeg"}&title=${item.title}&description=${
-                  item.description
-                }&alt=${item.alt}&author=${item.author}
-                  &price=${item.price}&time=${item.time}&bid=${
-                  item.bidding
-                }&liked=${item.id % 2 === 0 ? true : false}`);
-              }}
-              style={{ cursor: "pointer" }}
+              
             >
+              {/* using the nft card component */}
               <Nftcard
                 key={item.id}
                 src={item.src}
@@ -50,11 +42,14 @@ export default function Sales() {
                 likes={item.likes}
                 liked={item.id % 2 === 0 ? true : false}
                 avatar={false}
+                title={item.title}
+                id={item.id}
               />
             </div>
           ))}
         </Slider>
       </div>
+      {/* show me button */}
       <button className=" lg:text-[17px] text-[16px] dark:text-gray-400 text-gray-900 border-2 dark:border-gray-500 border-gray-900 w-[100%]  rounded-xl p-4 font-bold ">
         Show me more
       </button>

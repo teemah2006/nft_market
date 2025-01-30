@@ -3,6 +3,11 @@ import Image from "next/image";
 import { Images } from "../images/image";
 import { RiPaintBrushLine } from "react-icons/ri";
 import { PiMathOperationsFill } from "react-icons/pi";
+
+// there are two overline sections
+
+
+// overline section 1 component
 export default function Overline() {
   return (
     <div className="flex lg:flex-row flex-col items-center justify-between p-4 mt-[200px]">
@@ -38,6 +43,7 @@ export default function Overline() {
   );
 }
 
+// overline section 2 component
 export function Overline2() {
   return (
     <div className="flex lg:flex-row flex-col items-center justify-between p-4 mt-[200px]">

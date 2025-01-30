@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Images } from "../images/image";
 import { BiSearch, BiSolidDownArrow } from "react-icons/bi";
 
+// this is the header section component
 export default function Herosection() {
   return (
     <div className=" text-center ">
@@ -34,6 +35,8 @@ export default function Herosection() {
           <BiSearch className="inline mx-4 text-indigo-700 text-2xl" />
         </span>
       </div>
+
+      {/* these are the brand logos in this section */}
       <div className="flex flex-row mx-auto gap-16 justify-center my-10 mt-[150px]">
         <Image
           src={Images.addidas}

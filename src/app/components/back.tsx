@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { IoChevronBackCircle } from "react-icons/io5";
 
-
+// component for the back button when routing
 const GoBack = () => {
   const router = useRouter();
 

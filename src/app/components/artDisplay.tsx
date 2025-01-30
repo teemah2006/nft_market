@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
+
+// list of nft artworks
 const Artworks = [
   {
     src: Images.artwork1,
@@ -58,7 +60,10 @@ const Artworks = [
   },
 ];
 
+
+// the art display component
 export default function ArtDisplay() {
+  // setting the carousel settings
   const settings = {
     dots: false,
     speed: 500,

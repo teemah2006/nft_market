@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 
+// Advertisement for sell and create component
 export default function SellCreate() {
   return (
     <div className="rounded-2xl h-min lg:h-auto w-1/3 s p-4 my-8 box-border gradient1 ">
@@ -8,6 +9,7 @@ export default function SellCreate() {
         . . .
       </div>
 
+      {/* the hand image */}
       <Image
         className="relative saturate-50 mix-blend-lighten  opacity-75 h-[80%] w-[85%] -top-[7.5rem]"
         style={{ transform: "rotate(200deg)" }}

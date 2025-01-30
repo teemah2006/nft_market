@@ -10,6 +10,7 @@ import {
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip);
 
+// this is a chart for number of bidding per nft item
 const BidChart = () => {
   const data = {
     labels: ["12:00", "13:00", "14:00", "15:00", "16:00"], // Time points

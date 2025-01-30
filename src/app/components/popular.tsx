@@ -1,8 +1,9 @@
 "use client";
 import { Popularauction_details } from "./popular_auctions";
-import { Nftcard } from "./live_auctions";
+import { Nftcard } from "./nftCard";
 import { useRouter } from "next/navigation";
 
+// the popular auctions component
 export default function Popular_auctions() {
   const router = useRouter();
 
@@ -26,22 +27,14 @@ export default function Popular_auctions() {
         </span>
       </div>
       <div className="grid grid-cols-4  justify-between">
+        {/* looping through the nft items data for display */}
         {Popularauction_details.map((item) => (
           <div
             key={item.id}
-            onClick={() => {
-              router.push(`/artDetails?id=${
-                item.id
-              }&src=${"/art4.jpeg"}&title=${item.title}&description=${
-                item.description
-              }&alt=${item.alt}&author=${item.author}
-                &price=${item.price}&time=${item.time}&bid=${
-                item.bidding
-              }&liked=${item.id % 2 === 0 ? true : false}`);
-            }}
-            style={{ cursor: "pointer" }}
           >
             <Nftcard
+              title={item.title}
+              id={item.id}
               src={item.src}
               alt={item.alt}
               author={item.author}

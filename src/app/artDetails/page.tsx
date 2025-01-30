@@ -3,7 +3,7 @@ import { Auction_details } from "../components/auction";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import BidChart from "../components/bidChart";
-import { Nftcard } from "../components/live_auctions";
+import { Nftcard } from "../components/nftCard";
 import GoBack from "../components/back";
 import { useRouter } from "next/navigation";
 export default function Details() {

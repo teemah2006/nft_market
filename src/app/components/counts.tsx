@@ -4,11 +4,13 @@ import { GiPalette } from "react-icons/gi";
 import { TfiGallery } from "react-icons/tfi";
 import { IoWalletOutline } from "react-icons/io5";
 
+// creating variables to store current data
 const activeUsers = "300k";
 const artworks = "52,5k";
 const artists = "17,5k";
 const ethSpent = "35.58";
 
+// compiling data needed
 const Compiled_data = [
   {
     name: "Users active",
@@ -32,6 +34,7 @@ const Compiled_data = [
   },
 ];
 
+// component for all data
 export function Data() {
   return (
     <div className="grid grid-cols-4 text-center justify-between w-full h-max items-center my-36">
