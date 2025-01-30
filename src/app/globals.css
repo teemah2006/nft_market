@@ -28,6 +28,13 @@ body {
 .gradient2{
   background: linear-gradient(to top, #1e1e29, #1e1e29);
 }
+.gradient3{
+  background: linear-gradient(to bottom, #e7e7ee, #7a7a83);
+}
+
+.gradient4{
+  background: linear-gradient(to top, #e7e7ee, #7a7a83);
+}
 
 .shadow-lg {
   box-shadow: 0 4px 30px rgba(0, 255, 255, 0.3);

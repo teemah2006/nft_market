@@ -7,7 +7,12 @@ interface ProfileProps {
   collections: number;
 }
 
-export default function ProfileCard({ avatar, username, items, collections }: ProfileProps) {
+export default function ProfileCard({
+  avatar,
+  username,
+  items,
+  collections,
+}: ProfileProps) {
   return (
     <div className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-gray-500 shadow-lg backdrop-blur-md">
       {/* Avatar */}
@@ -18,7 +23,9 @@ export default function ProfileCard({ avatar, username, items, collections }: Pr
       {/* User Info */}
       <div className="text-white">
         <h3 className="text-lg font-semibold">@{username}</h3>
-        <p className="text-sm text-gray-400">Items: {items} | Collections: {collections}</p>
+        <p className="text-sm text-gray-400">
+          Items: {items} | Collections: {collections}
+        </p>
       </div>
     </div>
   );

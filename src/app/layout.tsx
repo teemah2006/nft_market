@@ -32,8 +32,8 @@ export default function RootLayout({
       </Head>
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-indigo-800  bg-[url(https://png.pngtree.com/background/20240414/original/pngtree-d-illustration-of-nfts-featuring-non-fungible-tokens-crypto-art-in-picture-image_8495603.jpg)]
-         bg-no-repeat bg-cover bg-blend-color-burn bg-local bg-center-top-[2rem]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-indigo-800  dark:bg-[url(https://png.pngtree.com/background/20240414/original/pngtree-d-illustration-of-nfts-featuring-non-fungible-tokens-crypto-art-in-picture-image_8495603.jpg)]
+         bg-no-repeat bg-cover bg-blend-color-burn bg-local bg-center-top-[5rem]`}
       >
         <Navbar/>
         {children}

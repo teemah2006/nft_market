@@ -38,7 +38,7 @@ export const Auction_details = [
     },
     {
         id: 4,
-        src: '/art4.jpeg',
+        src: Images.art2,
         title: "Lorem ipsum dolor sit amet .", 
         description: "Ut amet vulputate faucibus vitae semper eget auctor.",
         alt: "art4",
