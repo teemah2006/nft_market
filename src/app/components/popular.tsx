@@ -1,11 +1,9 @@
 "use client";
 import { Popularauction_details } from "./popular_auctions";
 import { Nftcard } from "./nftCard";
-import { useRouter } from "next/navigation";
 
 // the popular auctions component
 export default function Popular_auctions() {
-  const router = useRouter();
 
   return (
     <div className="mt-36 text-center">

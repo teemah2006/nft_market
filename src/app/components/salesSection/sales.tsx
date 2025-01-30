@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
-import { useRouter } from "next/navigation";
 const settings = {
   dots: false,
   infinite: true,
@@ -16,7 +15,6 @@ const settings = {
 
 // sales component
 export default function Sales() {
-  const router = useRouter();
   return (
     <div className="rounded-2xl h-min w-1/3 dark:bg-black bg-white bg-opacity-75 p-4 my-8 box-border border dark:border-gray-500 border-gray-700">
       <h1 className="font-sans font-bold  lg:text-[40px] sm:text-[20px] ">
