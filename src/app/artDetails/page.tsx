@@ -5,7 +5,9 @@ import Image from "next/image";
 import BidChart from "../components/bidChart";
 import { Nftcard } from "../components/nftCard";
 import GoBack from "../components/back";
-export default function Details() {
+import { Suspense } from "react";
+
+ function Details() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   //   const src = searchParams.get("src");
@@ -119,4 +121,12 @@ export default function Details() {
       </div>
     </div>
   );
+}
+
+export default function NftDetails(){
+  return(
+    <Suspense>
+      <Details />
+    </Suspense>
+  )
 }
