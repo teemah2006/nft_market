@@ -5,7 +5,6 @@ import Image from "next/image";
 import BidChart from "../components/bidChart";
 import { Nftcard } from "../components/nftCard";
 import GoBack from "../components/back";
-import { useRouter } from "next/navigation";
 export default function Details() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
@@ -18,7 +17,6 @@ export default function Details() {
   const alt = searchParams.get("alt");
   const description = searchParams.get("description");
 
-  const router = useRouter();
 
   if (!id) return <p>Loading...</p>;
 
